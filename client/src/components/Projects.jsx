@@ -40,10 +40,13 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen px-6 py-20 bg-gradient-to-br from-blue-100 to-indigo-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white relative"
+      className="relative overflow-hidden min-h-screen px-6 py-20 bg-gradient-to-br from-blue-100 to-indigo-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white"
     >
-      {/* Hero-style background glow */}
-      <div className="absolute top-[-150px] left-[-150px] w-[400px] h-[400px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-10 blur-3xl z-0"></div>
+      {/* 🔵 Background Blob Top Left */}
+      <div className="absolute -top-10 -left-20 w-[400px] h-[400px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
+
+      {/* 🔴 Background Blob Bottom Right */}
+      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500 rounded-full opacity-10 blur-2xl animate-ping z-0"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <motion.h2
@@ -81,7 +84,7 @@ const Projects = () => {
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   {project.description}
                 </p>
-                <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                <p className="mt-5 text-m text-gray-500 dark:text-gray-400">
                   <strong>Tech Stack:</strong> {project.tech}
                 </p>
 
@@ -114,4 +117,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
