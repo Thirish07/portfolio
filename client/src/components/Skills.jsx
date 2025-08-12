@@ -1,13 +1,26 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+
 import {
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub,
   FaJava, FaDatabase,
 } from 'react-icons/fa';
 import {
-  SiTailwindcss, SiMongodb, SiPostgresql, SiExpress, SiJavascript,
+  SiTailwindcss, SiMongodb, SiPostgresql, SiExpress, SiRedux, SiBootstrap, SiVisualstudio, SiPostman,
 } from 'react-icons/si';
+
+const VsCodeIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    className="w-8 h-8"
+  >
+      <path fill="#0065A9" d="M128 0l-.4 0c-3.5 0-7 1.1-9.8 3.2L9.6 88.5c-8.3 6.2-8.3 18.7 0 24.9l31.5 23.4 109.4-81.3 80.6 60.5 22.9-17.2c8.3-6.2 8.3-18.7 0-24.9L137.8 3.2c-2.9-2.1-6.3-3.2-9.8-3.2z"/>
+      <path fill="#007ACC" d="M9.6 142.6l108.2 80.3c2.9 2.1 6.3 3.2 9.8 3.2 3.5 0 7-1.1 9.8-3.2l117.9-87.5c8.3-6.2 8.3-18.7 0-24.9l-22.9-17.2-80.6 60.5-109.4-81.3L9.6 142.6z"/>
+      <path fill="#1F9CF0" d="M148.9 61.3l-109.4 81.3 109.4 81.3c2.9 2.1 6.3 3.2 9.8 3.2 3.5 0 7-1.1 9.8-3.2l117.9-87.5c8.3-6.2 8.3-18.7 0-24.9l-117.9-87.5c-2.9-2.1-6.3-3.2-9.8-3.2-3.5 0-7 1.1-9.8 3.2z"/>
+  </svg>
+);
 
 const skills = {
   Frontend: [
@@ -16,8 +29,8 @@ const skills = {
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-500" /> },
     { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-400" /> },
     { name: 'React.js', icon: <FaReact className="text-sky-500" /> },
-    { name: 'Redux', icon: <SiJavascript className="text-purple-500" /> },
-    { name: 'Bootstrap', icon: <FaCss3Alt className="text-indigo-400" /> },
+    { name: 'Redux', icon: <SiRedux className="text-purple-600" /> },
+    { name: 'Bootstrap', icon: <SiBootstrap className="text-indigo-500" /> },
   ],
   Backend: [
     { name: 'Node.js', icon: <FaNodeJs className="text-green-600" /> },
@@ -34,12 +47,14 @@ const skills = {
     { name: 'SQL', icon: <FaDatabase className="text-gray-600" /> },
   ],
   Tools: [
-    { name: 'Git', icon: <FaGitAlt className="text-orange-500" /> },
-    { name: 'GitHub', icon: <FaGithub className="text-gray-800 dark:text-white" /> },
-    { name: 'Postman', icon: <FaGithub className="text-pink-600" /> },
-    { name: 'VS Code', icon: <FaReact className="text-blue-500" /> },
-  ],
+  { name: 'Git', icon: <FaGitAlt className="text-orange-500" /> },
+  { name: 'GitHub', icon: <FaGithub className="text-gray-800 dark:text-white" /> },
+  { name: 'Postman', icon: <SiPostman className="text-pink-600" /> },
+  { name: 'VS Code', icon: <VsCodeIcon /> },
+],
+
 };
+
 
 
 const categories = ['All', ...Object.keys(skills)];
@@ -67,12 +82,12 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen px-6 py-20 bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-white relative"
-    >
-      {/* 💫 Background Glow */}
-      <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full opacity-10 blur-3xl z-0"></div>
-
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+     className="min-h-screen px-6 py-20 relative overflow-hidden text-gray-800 dark:text-white"
+     >
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"></div>
+    <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full opacity-20 blur-3xl"></div>
+    <div className="absolute bottom-[-120px] right-[-120px] w-[400px] h-[400px] bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full opacity-20 blur-3xl"></div>
+    <div className="relative z-10 max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
