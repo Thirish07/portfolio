@@ -18,18 +18,18 @@ app.post("/api/contact", async (req, res) => {
 
   // Setup nodemailer transporter
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,  // e.g. smtp.gmail.com
+    host: process.env.SMTP_HOST,  
     port: Number(process.env.SMTP_PORT) || 587,
-    secure: false,                // true if 465, false for other ports
+    secure: false,                
     auth: {
-      user: process.env.SMTP_USER, // your email
-      pass: process.env.SMTP_PASS, // your email password or app password
+      user: process.env.SMTP_USER, 
+      pass: process.env.SMTP_PASS, 
     },
   });
 
   const mailOptions = {
-    from: `"${name}" <${email}>`,       // sender address
-    to: process.env.RECEIVER_EMAIL,     // your email to receive messages
+    from: `"${name}" <${email}>`,       
+    to: process.env.RECEIVER_EMAIL,     
     subject: `Contact Form Submission from ${name}`,
     text: message,
     html: `<p><strong>Name:</strong> ${name}</p>
