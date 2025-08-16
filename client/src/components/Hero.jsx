@@ -7,16 +7,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden min-h-[85vh] flex flex-col md:flex-row items-center justify-center gap-8 px-4 sm:px-8 md:px-12 pt-12 pb-12"
+      className="relative overflow-hidden min-h-[115vh] flex flex-col md:flex-row items-center justify-center gap-8 px-4 sm:px-8 md:px-12 pt-12 pb-12"
     >
       {/* 🔵 Background Blob Top Left */}
-      <div className="absolute -top-10 -left-20 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
+      <div className="absolute -top-30 -left-20 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
 
       {/* 🔴 Background Blob Bottom Right */}
       <div className="absolute bottom-0 right-0 w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500 rounded-full opacity-10 blur-2xl animate-ping z-0"></div>
 
       {/* 💬 Content */}
-      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-center gap-10 max-w-7xl mx-auto">
         
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
@@ -68,7 +68,7 @@ const Hero = () => {
               My Resume
             </a>
             <a
-              href="mailto:thirisala2004@gmail.com"
+              href="#contact"
               className="px-5 py-2.5 text-sm sm:text-base font-medium text-white bg-gray-900 rounded-xl shadow hover:bg-gray-800 transition duration-300 w-full sm:w-auto text-center"
             >
               Mail Me

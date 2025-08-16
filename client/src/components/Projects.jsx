@@ -12,7 +12,7 @@ const projects = [
       "Developed a GitHub clone using React.js, Express.js, Node.js, and MongoDB. Features include user authentication, REST APIs, and responsive UI.",
     tech: "HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB",
     image: githubImg,
-    github: "https://github.com/thirisala/Github_clone",
+    github: "https://github.com/Thirish07/GITHUB-Clone",
     demo: "https://your-demo-link.com",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
       "Built a dynamic job portal with React.js frontend and Express.js, Node.js, MongoDB backend. Includes responsive design and efficient data management.",
     tech: "HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB",
     image: jobImg,
-    github: "https://github.com/thirisala/job-lane",
+    github: "https://github.com/Thirish07/job-lane",
     demo: "https://your-demo-link.com",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
       "A full-stack cloud storage platform with the PERN stack. Supports file uploads, sharing with roles, recent activity, and OTP authentication.",
     tech: "PostgreSQL, Express.js, React.js, Node.js, HTML, CSS, JavaScript, Redis",
     image: driveImg,
-    github: "https://github.com/thirisala/drive-auth",
+    github: "https://github.com/Thirish07/drive",
     demo: "https://your-demo-link.com",
   },
 ];

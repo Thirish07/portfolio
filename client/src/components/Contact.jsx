@@ -129,14 +129,14 @@ const Contact = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-10 text-gray-600 dark:text-gray-400 text-4xl md:text-5xl transition-colors">
           <a
-            href="mailto:thirisala2004@gmail.com"
+            href="#contact"
             className="hover:text-blue-600 dark:hover:text-blue-400"
             aria-label="Email"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://github.com/thirisala"
+            href="https://github.com/Thirish07"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 dark:hover:text-gray-100"
