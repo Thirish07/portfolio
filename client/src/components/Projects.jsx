@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import githubImg from "../assets/github.jpeg";
 import jobImg from "../assets/job.jpeg";
-import driveImg from "../assets/drive.jpeg";
+//import driveImg from "../assets/drive.jpeg";
+import my_blogImg from "../assets/my_blog.png";
 
 const projects = [
   {
@@ -25,12 +26,12 @@ const projects = [
     demo: "https://your-demo-link.com",
   },
   {
-    title: "Drive Printing System",
+    title: "Blog Management System",
     description:
-      "A full-stack cloud storage platform with the PERN stack. Supports file uploads, sharing with roles, recent activity, and OTP authentication.",
-    tech: "PostgreSQL, Express.js, React.js, Node.js, HTML, CSS, JavaScript, Redis",
-    image: driveImg,
-    github: "https://github.com/Thirish07/drive",
+      "A secure blog platform using Node.js, Express.js, and MongoDB with authentication, categories, comments, likes, and Cloudinary integration for seamless content management and engagement.",
+    tech: "MongoDB, Express.js, React.js, Node.js, HTML, CSS, JavaScript",
+    image:my_blogImg ,
+    github: "https://github.com/Thirish07/My_Blogg",
     demo: "https://your-demo-link.com",
   },
 ];

@@ -44,7 +44,7 @@ const About = () => {
             Hi, I'm <span className="font-semibold">Thirisala</span> — a passionate Full Stack Developer with a strong foundation in modern web technologies and problem-solving. I thrive in dynamic environments, combining creativity and logic to build scalable, user-focused applications. With a hunger to learn and grow, I'm excited to contribute to impactful projects and collaborate with forward-thinking teams.
           </p>
           <a
-            href="https://drive.google.com/file/d/1pe7j2NFpMVoO0qw9wWp_GF7ieBVFVM1v/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1x7D3XRbh-vZboA6XoLoxs2aQku_AkfnM/view?usp=sharing"
             download
             className="inline-block px-4 sm:px-5 py-2 text-sm sm:text-base bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition duration-300"
           >

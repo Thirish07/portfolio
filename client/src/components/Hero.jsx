@@ -61,7 +61,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="mt-6 flex gap-4 flex-wrap justify-center md:justify-start w-full sm:w-auto">
             <a
-              href="https://drive.google.com/file/d/1pe7j2NFpMVoO0qw9wWp_GF7ieBVFVM1v/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1x7D3XRbh-vZboA6XoLoxs2aQku_AkfnM/view?usp=sharing"
               download
               className="px-5 py-2.5 text-sm sm:text-base font-medium text-white bg-blue-600 rounded-xl shadow hover:bg-blue-700 transition duration-300 w-full sm:w-auto text-center"
             >
